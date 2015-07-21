@@ -6,10 +6,10 @@ function removeDuplicateChars(s) {
   var rmDupl = '';
 
   for(var i = 0; i < s.length; i++) {
-      if(!(s[i] in chars)) {
-          chars[s[i]] = 1;
-          rmDupl += s[i];
-      }
+    if(!(s[i] in chars)) {
+      chars[s[i]] = 1;
+      rmDupl += s[i];
+    }
   }
   return rmDupl;
 }
